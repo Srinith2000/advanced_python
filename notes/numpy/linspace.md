@@ -33,25 +33,25 @@
         [0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9]
 
 
-  - To get the step size of an array we can just specify " retstep = True"
+- To get the step size of an array we can just specify " retstep = True"
   
+      import numpy as np
+      array, c = np.linspace(0, 10, num=5, retstep=True)
+      print("Step Size:", c)
+        
+      OUTPUT-
+        
+      Step Size: 2.5
+- To generate a multi-dimensional array, first generate a 1D array and reshape it to the desired dimension by using ".reshape()"
+        
         import numpy as np
-        array, c = np.linspace(0, 10, num=5, retstep=True)
-        print("Step Size:", c)
-        
-        OUTPUT-
-        
-        Step Size: 2.5
-  - To generate a multi-dimensional array, first generate a 1D array and reshape it to the desired dimension by using ".reshape()"
-        
-          import numpy as np
-          d = np.linspace(0, 1, num=16).reshape(4, 4)
-          print(d)
+        d = np.linspace(0, 1, num=16).reshape(4, 4)
+        print(d)
 
-          OUTPUT- 
+        OUTPUT- 
         
-          [[0.         0.06666667 0.13333333 0.2       ]
-          [0.26666667 0.33333333 0.4        0.46666667]
-          [0.53333333 0.6        0.66666667 0.73333333]
-          [0.8        0.86666667 0.93333333 1.        ]]
+        [[0.         0.06666667 0.13333333 0.2       ]
+        [0.26666667 0.33333333 0.4        0.46666667]
+        [0.53333333 0.6        0.66666667 0.73333333]
+        [0.8        0.86666667 0.93333333 1.        ]]
 
