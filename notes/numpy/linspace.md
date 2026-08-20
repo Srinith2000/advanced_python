@@ -44,13 +44,17 @@
       Step Size: 2.5
 
 - Formula to calculate the step value when the endpoint = True  
+
 $$
 \text{step} = \frac{\text{stop} - \text{start}}{\text{num} - 1}
 $$
+
 - Formula to calculate the step value when the endpoint = False  
+
 $$
 \text{step} = \frac{\text{stop} - \text{start}}{\text{num}}
 $$
+
 
 - To generate a multi-dimensional array, first generate a 1D array and reshape it to the desired dimension by using ".reshape()"
         
